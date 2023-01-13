@@ -21,39 +21,100 @@ code {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  z-index: -1;
 }
+
 .contact {
-  width: 160px;
-  height: 40px;
+  width: 175px;
+  height: 50px;
   position: fixed;
-  bottom: 25px;
-  left: 25px;
-  padding: 6px;
+  bottom: 35px;
+  left: 35px;
+  padding: 8px;
   overflow: hidden;
   border: none;
-  -webkit-border-radius: 150px;
-  border-radius: 150px;
+  -webkit-border-radius: 130px;
+  border-radius: 100px;
   color: rgba(255,255,255,1);
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   background: #820000;
-  -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
-  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+  opacity: 1;
+}
+
+#contactP::before{
+  content: url(images/telephone.png);
+  position: absolute;
+  left: -5px;
+  bottom: 0px;
 }
 
 #contactP{
   position: absolute;
   font-family: Arial;
-  left: 50px;
-  top: 16px;
-  bottom: 16px;
-  width: 100px;
-  height: 20px;
-  margin: 0;
+  font-size: 20px;
+  font-weight: bolder;
+  top: 38px;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 30px;
+  margin: auto;
+  opacity: 1;
 }
 
-.contact::hover{
-  
+.slide-out {
+  width: 170px;
+  height: 42px;
+  position: fixed;
+  bottom: 35px;
+  left: 240px;
+  padding: 8px;
+  overflow: hidden;
+  border: solid 4px #820000;
+  -webkit-border-radius:140px;
+  border-radius: 140px;
+  border-bottom-left-radius: 80px;
+  border-top-left-radius: 80px;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: white;
+  background-color: #fff;
+  transition: transform 0.5s ease-in-out;
+}
+
+.contact1:hover .slide-out {
+  transform: translateX(-25%);
+  opacity: 1;
+}
+.contact1:not(:hover) .slide-out {
+  transform: translateX(-100%);
+  opacity: 1;
+}
+
+.phoneNumber{
+  width: 150px;
+  height: 25px;
+  position: absolute;
+  color: #820000;
+  margin: 0;
+  left: 28px;
+  text-align: center;
+  top: 4px;
+  bottom: 5px;
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+.phoneNumber2{
+  width: 150px;
+  height: 25px;
+  position: absolute;
+  color: #820000;
+  margin: 0;
+  left: 25px;
+  text-align: center;
+  bottom: 4px;
+  font-size: 18px;
+  font-weight: bolder;
 }
