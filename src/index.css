@@ -13,7 +13,7 @@ code {
 }
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: grey;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,4 +21,39 @@ code {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  z-index: -1;
+}
+.contact {
+  width: 160px;
+  height: 40px;
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  padding: 6px;
+  overflow: hidden;
+  border: none;
+  -webkit-border-radius: 150px;
+  border-radius: 150px;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #820000;
+  -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+#contactP{
+  position: absolute;
+  font-family: Arial;
+  left: 50px;
+  top: 16px;
+  bottom: 16px;
+  width: 100px;
+  height: 20px;
+  margin: 0;
+}
+
+.contact::hover{
+  
 }
