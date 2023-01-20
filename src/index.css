@@ -25,7 +25,7 @@ code {
 }
 
 /* down left contact box */
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .contact{
     display: none;
   }

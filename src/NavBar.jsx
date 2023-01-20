@@ -19,7 +19,7 @@ function NavBar() {
     return (
         <nav className="nav-bar">
             <img id="logo" src ={Logo} alt=""></img>
-            <ul class="nav-bar-ul">
+            <ul className="nav-bar-ul">
                 <li><a class="nav-bar-a" href="/">O Nas</a></li>
                 <li><a class="nav-bar-a" href="/">Dlaczego my?</a></li>
                 <li><a class="nav-bar-a" href="/">Oferta</a></li>
