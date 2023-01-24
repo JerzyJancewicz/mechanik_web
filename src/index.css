@@ -25,7 +25,7 @@ code {
 }
 
 /* down left contact box */
-@media (max-width: 1000px) {
+@media (max-height: 600px) {
   .contact{
     display: none;
   }
@@ -36,8 +36,8 @@ code {
 
 .contact {
   text-align: center;
-  width: 220px;
-  height: 70px;
+  width: 200px;
+  height: 60px;
   position: fixed;
   bottom: 35px;
   left: 35px;
@@ -51,6 +51,32 @@ code {
   text-overflow: ellipsis;
   background: #820000;
   opacity: 1;
+}
+
+.slide-out {
+  text-align: center;
+  width: 185px;
+  height: 52px;
+  max-width: 300px;
+  max-height: 86px;
+  position: fixed;
+  bottom: 35px;
+  left: 266px;
+  padding: 8px;
+  overflow: hidden;
+  border: solid 4px #820000;
+  -webkit-top-right-border-radius:140px;
+  -webkit-bottom-right-border-radius:140px;
+  border-top-right-radius: 140px;
+  border-bottom-right-radius: 140px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: white;
+  background-color: #fff;
+  transition: transform 0.5s ease-in-out;
 }
 
 #contactP::before{
@@ -67,7 +93,7 @@ code {
   font-family: Arial;
   font-size: 20px;
   font-weight: bolder;
-  top: 47px;
+  top: 43px;
   left: 61%;
   transform: translate(-50%, -50%);
   width: 180px;
@@ -85,11 +111,11 @@ code {
   position: absolute;
   color: #820000;
   margin: 0;
-  left: 55px;
+  left: 45px;
   text-align: center;
-  top: 10px;
+  top: 7px;
   bottom: 5px;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: bolder;
 }
 
@@ -101,37 +127,11 @@ code {
   position: absolute;
   color: #820000;
   margin: 0;
-  left: 34px;
+  left: 30px;
   text-align: center;
-  bottom: 14px;
-  font-size: 21px;
+  bottom: 12px;
+  font-size: 20px;
   font-weight: bolder;
-}
-
-.slide-out {
-  text-align: center;
-  width: 200px;
-  height: 62px;
-  max-width: 300px;
-  max-height: 86px;
-  position: fixed;
-  bottom: 35px;
-  left: 285px;
-  padding: 8px;
-  overflow: hidden;
-  border: solid 4px #820000;
-  -webkit-top-right-border-radius:140px;
-  -webkit-bottom-right-border-radius:140px;
-  border-top-right-radius: 140px;
-  border-bottom-right-radius: 140px;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  color: rgba(255,255,255,1);
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: white;
-  background-color: #fff;
-  transition: transform 0.5s ease-in-out;
 }
 
 .contact1:hover .slide-out {
@@ -153,8 +153,10 @@ code {
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  height: 5rem;
+  height: 4.2rem;
   width: auto;
+  z-index: 4;
+  opacity: 2;
 }
 
 .nav-bar-ul{
@@ -212,7 +214,7 @@ code {
 }
 
 .nav-box {
-  --nav-width: 450px;
+  --nav-width: 100%;
 
   position: fixed;
   text-decoration: none;
@@ -221,12 +223,12 @@ code {
   right: 0;
   margin: 0;
   width: var(--nav-width);
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.6);
-  transform: translateX(var(--nav-width));
+  height: 425px;
+  background: #820000;
+  transform: translateY(calc(-1 * var(--nav-width)));
   transition: transform 0.4s;
   z-index: 2;
-  
+  opacity: 1;
 }
 
 .nav-box-a{
@@ -235,23 +237,29 @@ code {
 }
 
 .nav-box li{
+  text-align: center;
   list-style: none;
   padding-top: 0px;
-  padding-bottom: 46px;
+  padding-bottom: 15px;
+}
+
+.nav-box ul{
+  padding-top: 60px;
 }
 
 .nav-box-open {
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
- .nav-overlay {
+.nav-overlay {
   display: none;
   position: fixed;
   top: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
-  transform: translateX(-300px);
+  background: rgba(0,0,0, 0.1);
+  transform: translateX(300px);
   transition: transform 0.25s ease-in-out;
   z-index: 1;
 }
