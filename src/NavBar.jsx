@@ -5,28 +5,39 @@ function NavBar() {
 
     const[style, setStyle] = useState("nav-box");
     const[styleOverlay, setStyleOverlay] = useState("nav-overlay");
+    const[isOpen, setOpen] = useState(false);
 
     function handleClick(){
-        setStyle("nav-box nav-box-open");
-        setStyleOverlay("nav-overlay nav-overlay-open");
+        if(isOpen === false){
+            setStyle("nav-box nav-box-open");
+            setStyleOverlay("nav-overlay nav-overlay-open");
+            setOpen(true);
+        }else{
+            setStyleOverlay("nav-overlay");
+            setStyle("nav-box");
+            setOpen(false);
+        }        
     }
 
     function handleOverlay(){
         setStyleOverlay("nav-overlay");
         setStyle("nav-box");
+        setOpen(false);
     }
 
     return (
         <nav className="nav-bar">
             <img id="logo" src ={Logo} alt=""></img>
-            <ul className="nav-bar-ul">
-                <li><a class="nav-bar-a" href="/">O Nas</a></li>
-                <li><a class="nav-bar-a" href="/">Dlaczego my?</a></li>
-                <li><a class="nav-bar-a" href="/">Oferta</a></li>
-                <li><a class="nav-bar-a" href="/">Opinie</a></li>
-                <li><a class="nav-bar-a" href="/">Umów Wizytę</a></li>
-                <li><a class="nav-bar-a" href="/">Kontakt</a></li>
-            </ul>
+            <div id="nav-div">
+                <ul className="nav-bar-ul">
+                    <li><a className="nav-bar-a" href="/">O Nas</a></li>
+                    <li><a className="nav-bar-a" href="/">Dlaczego my?</a></li>
+                    <li><a className="nav-bar-a" href="/">Oferta</a></li>
+                    <li><a className="nav-bar-a" href="/">Opinie</a></li>
+                    <li><a className="nav-bar-a" href="/">Umów Wizytę</a></li>
+                    <li><a className="nav-bar-a" href="/">Kontakt</a></li>
+                </ul>
+            </div>
             <button type="button" className= "nav-button" onClick={handleClick}>
                 <span className="material-symbols-rounded">
                     menu
@@ -34,12 +45,12 @@ function NavBar() {
             </button>
             <div className={style}>
                 <ul>
-                    <li><a class="nav-box-a nav-bar-a" href="/">O Nas</a></li>
-                    <li><a class="nav-box-a nav-bar-a" href="/">Dlaczego my?</a></li>
-                    <li><a class="nav-box-a nav-bar-a" href="/">Oferta</a></li>
-                    <li><a class="nav-box-a nav-bar-a" href="/">Opinie</a></li>
-                    <li><a class="nav-box-a nav-bar-a" href="/">Umów Wizytę</a></li>
-                    <li><a class="nav-box-a nav-bar-a" href="/">Kontakt</a></li>
+                    <li><a className="nav-box-a nav-bar-a" href="/">O Nas</a></li>
+                    <li><a className="nav-box-a nav-bar-a" href="/">Dlaczego my?</a></li>
+                    <li><a className="nav-box-a nav-bar-a" href="/">Oferta</a></li>
+                    <li><a className="nav-box-a nav-bar-a" href="/">Opinie</a></li>
+                    <li><a className="nav-box-a nav-bar-a" href="/">Umów Wizytę</a></li>
+                    <li><a className="nav-box-a nav-bar-a" href="/">Kontakt</a></li>
                 </ul>
             </div>
             <div className={styleOverlay} onClick={handleOverlay}></div>
