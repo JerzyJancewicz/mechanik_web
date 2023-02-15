@@ -1,6 +1,6 @@
 import React from "react";
 import BackPhoto from "../images/back.png"
-import Logo from "../images/logo3.png";
+import Logo from "../images/logoG.png";
 
 function Onas(){
     return (

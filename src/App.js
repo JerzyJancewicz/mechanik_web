@@ -3,6 +3,7 @@ import Contact from "./Contact";
 import NavBar from './NavBar';
 import Onas from './sections/Onas';
 import PoznajNas from './sections/PoznajNas';
+import DlaczegoMy from './sections/DlaczegoMy';
 
 function App() { 
 
@@ -11,6 +12,7 @@ function App() {
       <NavBar/>
       <Onas/>
       <PoznajNas/>
+      <DlaczegoMy/>
       <Contact/>
     </div>
   );
