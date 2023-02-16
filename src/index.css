@@ -13,6 +13,7 @@ body {
 
   --fs-xl: clamp(3.5rem, 4.5vw + 1rem, 10rem);
   --fs-600: 1.7rem;
+  --fs-700: 2rem;
   --fs-400: 1.225rem;
 }
 
@@ -37,8 +38,12 @@ h1{
   font-size: var(--fs-xl);
 }
 
+h2{
+  font-size: var(--fs-700);
+}
+
 .App {
-  background-color:#820000;
+  background-color:#801414;
   min-height: 100vh;
   justify-content: center;
   color: white;
@@ -398,6 +403,8 @@ h1{
 /* SECTION: poznaj-nas */
 
 @media (min-width: 70em){
+
+  /* poznaj-nas */
   #poznaj-nas-div{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -409,11 +416,28 @@ h1{
     align-items: center;
     margin: auto;
   }
+
+  /* dlaczego-my */
+  #dlaczego-my-div{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #dlaczego-my-h1-div{
+    grid-column: 2;
+    margin-left: auto;
+  margin-right: auto;
+  }
+
+  .dlaczego-my-div2{
+    grid-row: 2/5;
+  }
+
+  /*  */
 }
 
 #poznaj-nas{
   position: relative;
-  background-color: #820000;
+  background-color: #801414;
   margin-right: 80px;
   margin-left: 80px;
 }
@@ -456,3 +480,40 @@ h1{
   margin-bottom: 40px;
 }
 
+/* SECTION: dlaczego-my */
+
+#dlaczego-my{
+  position: relative;
+  z-index: 800;
+}
+
+#dlaczego-my-div{
+  display: grid;
+  position: absolute;
+  gap: 1em;
+  background-color:#801414;
+}
+
+.dlaczego-my-p{
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+#dlaczego-my-h1{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.dlaczego-my-h2{
+  text-align: center;
+}
+
+.dlaczego-my-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
