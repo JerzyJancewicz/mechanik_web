@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import Onas from './sections/Onas';
 import PoznajNas from './sections/PoznajNas';
 import DlaczegoMy from './sections/DlaczegoMy';
+import NaszaOferta from './sections/NaszaOferta';
 
 function App() { 
 
@@ -13,6 +14,7 @@ function App() {
       <Onas/>
       <PoznajNas/>
       <DlaczegoMy/>
+      <NaszaOferta/>
       <Contact/>
     </div>
   );
