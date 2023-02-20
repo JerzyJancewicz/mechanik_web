@@ -11,7 +11,7 @@ body {
   font-size: 100%;
   display: block;
 
-  --fs-xl: clamp(3.5rem, 4.5vw + 1rem, 10rem);
+  --fs-xl: clamp(5rem, 4vw + 1rem, 10rem);
   --fs-600: 1.7rem;
   --fs-700: 2rem;
   --fs-400: 1.225rem;
@@ -423,21 +423,36 @@ h2{
   }
 
   #dlaczego-my-h1-div{
-    grid-column: 2;
+    grid-column: 1 / 4;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
   }
 
   .dlaczego-my-div2{
     grid-row: 2/5;
   }
 
+  /* nasza-oferta */
+
+  #nasza-oferta-div{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* opinie-klientow */
+
+  #opinie-klientow-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   /*  */
 }
+
+/* SECTION: poznaj-nas */
 
 #poznaj-nas{
   position: relative;
   background-color: #801414;
+  z-index: 800;
   margin-right: 80px;
   margin-left: 80px;
 }
@@ -484,12 +499,14 @@ h2{
 
 #dlaczego-my{
   position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 70px;
   z-index: 800;
 }
 
 #dlaczego-my-div{
   display: grid;
-  position: absolute;
   gap: 1em;
   background-color:#801414;
 }
@@ -505,6 +522,7 @@ h2{
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .dlaczego-my-h2{
@@ -516,4 +534,125 @@ h2{
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+}
+
+/* SECTION: nasza-oferta */
+
+#nasza-oferta{
+  z-index: 800;
+  position: relative;
+  background-color: #fff;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#nasza-oferta-div{
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#nasza-oferta-h1{
+  color: #801414;
+  font-size: calc(var(--fs-xl) * 0.85);
+  margin: auto;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.nasza-oferta-p::before{
+  content: url(images/checklist-point-image.png);
+  margin: auto;
+  margin-right: 15px;
+  right: 100%;
+}
+
+.nasza-oferta-p{
+  display: flex;
+  margin: 0px;
+  align-items: center;
+  line-height: 1em;
+}
+
+#nasza-oferta-img-div{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#nasza-oferta-img{
+  width: 75%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#nasza-oferta-div-grid{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.nasza-oferta-div-grid-child{
+  display: flex;
+  margin: auto;
+  width: 650px;
+  height: 72px;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  color: rgba(255,255,255,1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #801414;
+}
+
+/* SECTION: opinie-klientow */
+
+#opinie-klientow{
+  position: relative;
+  z-index: 800;
+}
+
+#opinie-klientow-div{
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#opinie-klientow-grid{
+  display: grid;
+  margin: auto;
+  justify-content: center;
+}
+
+.opinie-klientow-div-grid-child{
+  width: 400px;
+  height: 460px;
+  background-color: #fff;
+  margin: auto;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+#opinie-klientow-h1{
+  margin-top: 100px;
+  width: auto;
+  text-align: center;
+}
+
+.opinie-klientow-p{
+  color: #000;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: calc(var(--fs-600) * 0.9 );
+}
+
+.opinie-klientow-img{
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+  text-align: center;
 }

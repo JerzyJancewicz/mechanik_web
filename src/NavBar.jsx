@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Logo from "./images/logo3.png";
 
 function NavBar() {
@@ -6,6 +6,8 @@ function NavBar() {
     const[style, setStyle] = useState("nav-box");
     const[styleOverlay, setStyleOverlay] = useState("nav-overlay");
     const[isOpen, setOpen] = useState(false);
+
+    const o_nas_ref = useRef("cs");
 
     function handleClick(){
         if(isOpen === false){
@@ -24,6 +26,13 @@ function NavBar() {
         setStyle("nav-box");
         setOpen(false);
     }
+
+    // const onasRef = useRef(null);
+    // const handleOnasClick = (event) => {
+    //     event.preventDefault();
+    //     onasRef.current.scrollIntoView({ behavior: "smooth" });
+    //   };
+    
 
     return (
         <nav className="nav-bar">

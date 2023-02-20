@@ -16,10 +16,10 @@ function poznajNas(){
                 </div>
                 <div className="poznaj-imgs1">
                     <div className="poznaj-imgs">
-                        <img src={Img1} id="poznaj-nas-img1"></img>
+                        <img src={Img1} id="poznaj-nas-img1" alt=""></img>
                     </div>
                     <div className="poznaj-imgs">
-                        <img src={Img2} id="poznaj-nas-img2"></img>
+                        <img src={Img2} id="poznaj-nas-img2" alt=""></img>
                     </div>
                 </div>
             </div>

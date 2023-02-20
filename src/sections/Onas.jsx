@@ -3,6 +3,7 @@ import BackPhoto from "../images/back.png"
 import Logo from "../images/logoG.png";
 
 function Onas(){
+
     return (
         <section id="o-nas">
             <div id="o-nas-div">

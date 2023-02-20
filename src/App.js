@@ -5,6 +5,7 @@ import Onas from './sections/Onas';
 import PoznajNas from './sections/PoznajNas';
 import DlaczegoMy from './sections/DlaczegoMy';
 import NaszaOferta from './sections/NaszaOferta';
+import OpinieKlientow from './sections/OpinieKlientow';
 
 function App() { 
 
@@ -15,6 +16,7 @@ function App() {
       <PoznajNas/>
       <DlaczegoMy/>
       <NaszaOferta/>
+      <OpinieKlientow/>
       <Contact/>
     </div>
   );
