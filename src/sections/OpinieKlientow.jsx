@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../images/checklist-point-image.png"
+import Img from "../images/5gwiazd.png"
 
 function OpinieKlientow(){
     return (

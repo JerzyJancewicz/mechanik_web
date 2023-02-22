@@ -369,7 +369,7 @@ h2{
 #o-nas-img{
     object-fit: cover;
     width: 100%;
-    height: 700px;
+    height: 750px;
     overflow-clip-margin: content-box;
     overflow: clip;
 }
@@ -499,8 +499,8 @@ h2{
 
 #dlaczego-my{
   position: relative;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   margin-bottom: 70px;
   z-index: 800;
 }
@@ -539,11 +539,11 @@ h2{
 /* SECTION: nasza-oferta */
 
 #nasza-oferta{
-  z-index: 800;
   position: relative;
   background-color: #fff;
   margin-right: 50px;
   margin-left: 50px;
+  z-index: 800;
 }
 
 #nasza-oferta-div{
@@ -623,6 +623,7 @@ h2{
 
 #opinie-klientow-grid{
   display: grid;
+  gap: 15px;
   margin: auto;
   justify-content: center;
 }
@@ -656,3 +657,103 @@ h2{
   margin-top: 50px;
   text-align: center;
 }
+
+/* SECTION: umow-wiz */
+
+#umow-wiz{
+  position: relative;
+  margin-top: 40px;
+  z-index: 800;
+}
+
+#umow-wiz-div{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#umow-wiz-div1{
+  width: 100%;
+  height: auto;
+}
+
+#umow-wiz-div2{
+  position: absolute;
+  margin: auto;
+  height: 100%;
+  z-index: 500;
+}
+
+#umow-wiz-mail-div{
+  display: flex;
+  margin: auto;
+  width: 500px;
+  height: 80px;
+  margin-top: 110px;
+  border-radius: 7px;
+  background-color: #801414;
+  transition: 0.3s;
+}
+
+#umow-wiz-p{
+  width: 40%;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 70px;
+  font-size: calc(var(--fs-600)*1.1);
+  font-weight: 400;
+}
+
+#umow-wiz-mail-btn{
+  text-decoration: none;
+  font-size: calc(var(--fs-600)*1.4);
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 129px;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+
+#umow-wiz-mail-btn:hover{
+  color: #801414;
+}
+
+#umow-wiz-mail-div:hover{
+  background-color: #fff;
+}
+
+#umow-wiz-mail-btn::after{
+
+}
+
+#umow-wiz-logo-div{
+  margin: auto;
+  position: absolute;
+  width: 70%;
+  border-radius: 7px;
+  background-color:#820000;
+  margin-top: 50px;
+  bottom: 0;
+}
+
+#umow-wiz-logo-div p{
+  width: 10.25em;
+  margin: auto;
+  font-size: 1em;
+  padding-bottom: 10px;
+}
+
+#umow-wiz-logo{
+  zoom: 90%;
+  box-sizing: border-box;
+}
+
+#umow-wiz-back-img{
+  object-fit: cover;
+  width: 100%;
+  height: 800px;
+  overflow: clip;
+}
+
+/*  */

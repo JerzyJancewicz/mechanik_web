@@ -6,6 +6,7 @@ import PoznajNas from './sections/PoznajNas';
 import DlaczegoMy from './sections/DlaczegoMy';
 import NaszaOferta from './sections/NaszaOferta';
 import OpinieKlientow from './sections/OpinieKlientow';
+import UmowWizyte from './sections/UmowWizyte';
 
 function App() { 
 
@@ -17,6 +18,7 @@ function App() {
       <DlaczegoMy/>
       <NaszaOferta/>
       <OpinieKlientow/>
+      <UmowWizyte/>
       <Contact/>
     </div>
   );
