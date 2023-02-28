@@ -17,10 +17,10 @@ function UmowWizyte(){
                     <div id="umow-wiz-mail-div">
                         <a id="umow-wiz-mail-btn" href="mailto:jancewiczejrzy@gmail.com">Umów wizytę</a>
                     </div>
-                </div>
-                <div id="umow-wiz-logo-div">
+                    <div id="umow-wiz-logo-div">
                         <img id="umow-wiz-logo" src={Logo} alt=""></img>
                         <p>ELEKTROMECHANIKA ​MOTORYZACYJNA</p>
+                    </div>
                 </div>
             </div>
         </section>

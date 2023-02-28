@@ -7,6 +7,7 @@ import DlaczegoMy from './sections/DlaczegoMy';
 import NaszaOferta from './sections/NaszaOferta';
 import OpinieKlientow from './sections/OpinieKlientow';
 import UmowWizyte from './sections/UmowWizyte';
+import NaszaLokalizacja from './sections/NaszaLokalizacja';
 
 function App() { 
 
@@ -19,9 +20,8 @@ function App() {
       <NaszaOferta id="nasza-oferta"/>
       <OpinieKlientow id="opinie-klientow"/>
       <UmowWizyte id="umow-wiz"/>
+      <NaszaLokalizacja id="nasza-lok"/>
       <Contact/>
-      <div></div>
-
     </div>
   );
 }
