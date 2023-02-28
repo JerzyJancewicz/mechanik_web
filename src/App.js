@@ -13,13 +13,15 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Onas/>
-      <PoznajNas/>
-      <DlaczegoMy/>
-      <NaszaOferta/>
-      <OpinieKlientow/>
-      <UmowWizyte/>
+      <Onas id="o-nas"/>
+      <PoznajNas id="poznaj-nas"/>
+      <DlaczegoMy id="dlaczego-my"/>
+      <NaszaOferta id="nasza-oferta"/>
+      <OpinieKlientow id="opinie-klientow"/>
+      <UmowWizyte id="umow-wiz"/>
       <Contact/>
+      <div></div>
+
     </div>
   );
 }

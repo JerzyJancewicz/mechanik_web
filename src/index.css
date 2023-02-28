@@ -596,7 +596,7 @@ h2{
 .nasza-oferta-div-grid-child{
   display: flex;
   margin: auto;
-  width: 650px;
+  width: 40em;
   height: 72px;
   margin-top: 10px;
   padding-left: 20px;
@@ -607,6 +607,12 @@ h2{
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   background: #801414;
+}
+
+@media (max-width: 1570px) and (min-width: 70em) {
+  .nasza-oferta-div-grid-child{
+    margin-right: 20px;
+  }
 }
 
 /* SECTION: opinie-klientow */

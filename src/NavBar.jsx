@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, {useState} from "react";
+import {Link, animateScroll as scroll } from "react-scroll";
 import Logo from "./images/logo3.png";
 
 function NavBar() {
@@ -6,8 +7,6 @@ function NavBar() {
     const[style, setStyle] = useState("nav-box");
     const[styleOverlay, setStyleOverlay] = useState("nav-overlay");
     const[isOpen, setOpen] = useState(false);
-
-    const o_nas_ref = useRef("cs");
 
     function handleClick(){
         if(isOpen === false){
@@ -27,24 +26,17 @@ function NavBar() {
         setOpen(false);
     }
 
-    // const onasRef = useRef(null);
-    // const handleOnasClick = (event) => {
-    //     event.preventDefault();
-    //     onasRef.current.scrollIntoView({ behavior: "smooth" });
-    //   };
-    
-
     return (
         <nav className="nav-bar">
             <img id="logo" src ={Logo} alt=""></img>
             <div id="nav-div">
                 <ul className="nav-bar-ul">
-                    <li><a className="nav-bar-a" href="/">O Nas</a></li>
-                    <li><a className="nav-bar-a" href="/">Dlaczego my?</a></li>
-                    <li><a className="nav-bar-a" href="/">Oferta</a></li>
-                    <li><a className="nav-bar-a" href="/">Opinie</a></li>
-                    <li><a className="nav-bar-a" href="/">Umów Wizytę</a></li>
-                    <li><a className="nav-bar-a" href="/">Kontakt</a></li>
+                    <li><Link to="poznaj-nas" smooth={true} duration={500}><a className="nav-bar-a" href="/">O Nas</a></Link></li>
+                    <li><Link to="dlaczego-my" smooth={true} duration={500}><a className="nav-bar-a" href="/">Dlaczego my?</a></Link></li>
+                    <li><Link to="nasza-oferta" smooth={true} duration={500}><a className="nav-bar-a" href="/">Oferta</a></Link></li>
+                    <li><Link to="opinie-klientow" smooth={true} duration={500}><a className="nav-bar-a" href="/">Opinie</a></Link></li>
+                    <li><Link to="umow-wiz" smooth={true} duration={500}><a className="nav-bar-a" href="/">Umów Wizytę</a></Link></li>
+                    <li><Link to="chuj" smooth={true} duration={500}><a className="nav-bar-a" href="/">Kontakt</a></Link></li>
                 </ul>
             </div>
             <button type="button" className= "nav-button" onClick={handleClick}>
@@ -54,12 +46,12 @@ function NavBar() {
             </button>
             <div className={style}>
                 <ul>
-                    <li><a className="nav-box-a nav-bar-a" href="/">O Nas</a></li>
-                    <li><a className="nav-box-a nav-bar-a" href="/">Dlaczego my?</a></li>
-                    <li><a className="nav-box-a nav-bar-a" href="/">Oferta</a></li>
-                    <li><a className="nav-box-a nav-bar-a" href="/">Opinie</a></li>
-                    <li><a className="nav-box-a nav-bar-a" href="/">Umów Wizytę</a></li>
-                    <li><a className="nav-box-a nav-bar-a" href="/">Kontakt</a></li>
+                    <li><Link to="poznaj-nas" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">O Nas</a></Link></li>
+                    <li><Link to="dlaczego-my" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">Dlaczego my?</a></Link></li>
+                    <li><Link to="nasza-oferta" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">Oferta</a></Link></li>
+                    <li><Link to="opinie-klientow" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">Opinie</a></Link></li>
+                    <li><Link to="umow-wizyte" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">Umów Wizytę</a></Link></li>
+                    <li><Link to="" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">Kontakt</a></Link></li>
                 </ul>
             </div>
             <div className={styleOverlay} onClick={handleOverlay}></div>
