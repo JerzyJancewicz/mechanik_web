@@ -28,15 +28,15 @@ function NavBar() {
 
     return (
         <nav className="nav-bar">
-            <img id="logo" src ={Logo} alt=""></img>
+            <Link to="o-nas" smooth={true} duration={800}><img id="logo" src ={Logo} alt=""></img></Link>
             <div id="nav-div">
                 <ul className="nav-bar-ul">
-                    <li><Link to="poznaj-nas" smooth={true} duration={500} offset={-90}><a className="nav-bar-a" href="/">O Nas</a></Link></li>
-                    <li><Link to="dlaczego-my" smooth={true} duration={500} offset={-50}><a className="nav-bar-a" href="/">Dlaczego my?</a></Link></li>
-                    <li><Link to="nasza-oferta" smooth={true} duration={500} offset={-80}><a className="nav-bar-a" href="/">Oferta</a></Link></li>
-                    <li><Link to="opinie-klientow" smooth={true} duration={500} offset={-150}><a className="nav-bar-a" href="/">Opinie</a></Link></li>
-                    <li><Link to="umow-wiz" smooth={true} duration={500}><a className="nav-bar-a" href="/">Umów Wizytę</a></Link></li>
-                    <li><Link to="chuj" smooth={true} duration={500}><a className="nav-bar-a" href="/">Kontakt</a></Link></li>
+                    <li><Link className="nav-bar-a" to="poznaj-nas" smooth={true} duration={800} offset={-90}>O Nas</Link></li>
+                    <li><Link className="nav-bar-a" to="dlaczego-my" smooth={true} duration={800} offset={-105}>Dlaczego my?</Link></li>
+                    <li><Link className="nav-bar-a" to="nasza-oferta" smooth={true} duration={800} offset={-70}>Oferta</Link></li>
+                    <li><Link className="nav-bar-a" to="opinie-klientow" smooth={true} duration={800} offset={-160}>Opinie</Link></li>
+                    <li><Link className="nav-bar-a" to="umow-wiz" smooth={true} duration={800} offset={-100}>Umów Wizytę</Link></li>
+                    <li><Link className="nav-bar-a" to="nasza-lok" smooth={true} duration={800}>Kontakt</Link></li>
                 </ul>
             </div>
             <button type="button" className= "nav-button" onClick={handleClick}>
@@ -46,12 +46,12 @@ function NavBar() {
             </button>
             <div className={style}>
                 <ul>
-                    <li><Link to="poznaj-nas" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">O Nas</a></Link></li>
-                    <li><Link to="dlaczego-my" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">Dlaczego my?</a></Link></li>
-                    <li><Link to="nasza-oferta" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">Oferta</a></Link></li>
-                    <li><Link to="opinie-klientow" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">Opinie</a></Link></li>
-                    <li><Link to="umow-wiz" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">Umów Wizytę</a></Link></li>
-                    <li><Link to="" smooth={true} duration={500}><a className="nav-box-a nav-bar-a" href="/">Kontakt</a></Link></li>
+                    <li><Link className="nav-bar-a nav-box-a" to="poznaj-nas" smooth={true} duration={800} offset={-90}>O Nas</Link></li>
+                    <li><Link className="nav-bar-a nav-box-a" to="dlaczego-my" smooth={true} duration={800} offset={-50}>Dlaczego my?</Link></li>
+                    <li><Link className="nav-bar-a nav-box-a" to="nasza-oferta" smooth={true} duration={800} offset={-80}>Oferta</Link></li>
+                    <li><Link className="nav-bar-a nav-box-a" to="opinie-klientow" smooth={true} duration={800} offset={-150}>Opinie</Link></li>
+                    <li><Link className="nav-bar-a nav-box-a" to="umow-wiz" smooth={true} duration={800}>Umów Wizytę</Link></li>
+                    <li><Link className="nav-bar-a nav-box-a" to="nasza-lok" smooth={true} duration={800}>Kontakt</Link></li>
                 </ul>
             </div>
             <div className={styleOverlay} onClick={handleOverlay}></div>

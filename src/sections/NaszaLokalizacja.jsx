@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 function NaszaLokalizacja(){
+
+    const { isLoaded } = useLoadScript({
+        googleMapsApiKey: "AIzaSyCAOgh5r1X1kyAn-OQXV9s-1wOpoBPDi4U",
+    });
+
+    const [center, setCenter] = useState({ lat: 53.14209, lng: 23.15669 });
+
+    if(!isLoaded){
+        return <div id="nasza-lok-map"></div>;
+    }
+
     return(
         <section id="nasza-lok">
             <div id="nasza-lok-div">
@@ -13,11 +25,19 @@ function NaszaLokalizacja(){
                     <p className="nasza-lok-tel">85 652 34 50</p>
                     <p className="nasza-lok-tel">+48 798 047 870</p>
                 </div>
-                <div id="nasza-lok-map">
-                </div>
+                <Map center={center} setCenter={setCenter}/>
             </div>
         </section>
     )
+}
+
+function Map({ center }){
+    const mapCenter = useMemo(() => center, [center]);
+    return(
+        <GoogleMap zoom={16} center={mapCenter} mapContainerClassName="nasza-lok-map2">
+            <Marker position={mapCenter} />
+        </GoogleMap>
+    );
 }
 
 export default NaszaLokalizacja;

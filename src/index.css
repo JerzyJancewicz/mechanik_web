@@ -11,7 +11,7 @@ body {
   font-size: 100%;
   display: block;
 
-  --fs-xl: clamp(5rem, 4vw + 1rem, 10rem);
+  --fs-xl: clamp(5rem, 3vw + 1rem, 10rem);
   --fs-600: calc(0.3vw + 1.4rem);
   --fs-700: 2rem;
   --fs-400: 1.225rem;
@@ -216,6 +216,7 @@ h2{
   display: block;
   box-sizing: border-box;
   padding: 10px;
+  zoom: 80%;
   z-index: 2000;
 }
 
@@ -515,6 +516,7 @@ h2{
 
 #dlaczego-my-div{
   display: grid;
+  margin-top: 50px;
   gap: 1em;
   background-color:#801414;
 }
@@ -639,14 +641,14 @@ h2{
 
 #opinie-klientow-grid{
   display: grid;
-  gap: 15px;
+  gap: 30px;
   margin: auto;
   justify-content: center;
 }
 
 .opinie-klientow-div-grid-child{
-  width: calc(400px + 1vw);
-  height: calc(460px + 1vw);
+  width: calc(340px + 4vw);
+  height: calc(420px + 4vw);
   background-color: #fff;
   margin: auto;
   margin-bottom: 20px;
@@ -697,6 +699,7 @@ h2{
   position: absolute;
   margin: auto;
   height: calc(100% - 5px);
+  justify-content: center;
   z-index: 500;
 }
 
@@ -737,15 +740,11 @@ h2{
   background-color: #fff;
 }
 
-#umow-wiz-mail-btn::after{
-
-}
-
 #umow-wiz-logo-div{
-  position:relative;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
   width: 70%;
   border-radius: 7px;
   border: 2px solid #fff;
@@ -791,6 +790,7 @@ h2{
 }
 
 #nasza-lok-div2{
+  margin-bottom: 50px;
 }
 
 .nasza-lok-p2{
@@ -810,6 +810,12 @@ h2{
 #nasza-lok-map{
   background-color: #fff;
   height: calc(600px + 2vw);
-  width: calc(600px + 2vw);
+  width: calc(700px + 2vw);
   margin-bottom: 50px;
+}
+
+.nasza-lok-map2{
+  height: calc(600px + 2vw);
+  width: calc(700px + 2vw);
+  margin-bottom: 100px;
 }
