@@ -1,6 +1,15 @@
 import React, { useState, useMemo } from "react";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
+function Map({ center }) {
+    const mapCenter = useMemo(() => center, [center]);
+    return (
+      <GoogleMap zoom={17} center={mapCenter} mapContainerClassName="nasza-lok-map2">
+        <Marker position={{ lat: 53.14209, lng: 23.15669 }}/>
+      </GoogleMap>
+    );
+  }
+
 function NaszaLokalizacja(){
 
     const { isLoaded } = useLoadScript({
@@ -31,13 +40,6 @@ function NaszaLokalizacja(){
     )
 }
 
-function Map({ center }){
-    const mapCenter = useMemo(() => center, [center]);
-    return(
-        <GoogleMap zoom={16} center={mapCenter} mapContainerClassName="nasza-lok-map2">
-            <Marker position={mapCenter} />
-        </GoogleMap>
-    );
-}
-
 export default NaszaLokalizacja;
+
+//"AIzaSyCAOgh5r1X1kyAn-OQXV9s-1wOpoBPDi4U"
