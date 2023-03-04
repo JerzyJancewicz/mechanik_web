@@ -41,5 +41,3 @@ function NaszaLokalizacja(){
 }
 
 export default NaszaLokalizacja;
-
-//"AIzaSyCAOgh5r1X1kyAn-OQXV9s-1wOpoBPDi4U"
