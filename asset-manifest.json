@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mechanik_web/static/css/main.1b011c93.css",
+    "main.js": "/mechanik_web/static/js/main.83cf09ad.js",
+    "static/media/image.png": "/mechanik_web/static/media/image.bcd7029e459287a91989.png",
+    "static/media/image00022new.jpeg": "/mechanik_web/static/media/image00022new.51c66c6acf5dc18d751f.jpeg",
+    "static/media/2.png": "/mechanik_web/static/media/2.ee6b54eba3dec870b73d.png",
+    "static/media/back.png": "/mechanik_web/static/media/back.52624414f938b8fe7420.png",
+    "static/media/image00007.jpeg": "/mechanik_web/static/media/image00007.2e27329ffeb804b82fad.jpeg",
+    "static/media/4.png": "/mechanik_web/static/media/4.2f036a7d29fd42203141.png",
+    "static/media/logoG.png": "/mechanik_web/static/media/logoG.89bd7db19f8a9a9e7b76.png",
+    "static/media/checklist-point-image.png": "/mechanik_web/static/media/checklist-point-image.6f49887044287bf9b6cb.png",
+    "index.html": "/mechanik_web/index.html",
+    "main.1b011c93.css.map": "/mechanik_web/static/css/main.1b011c93.css.map",
+    "main.83cf09ad.js.map": "/mechanik_web/static/js/main.83cf09ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b011c93.css",
+    "static/js/main.83cf09ad.js"
+  ]
+}
