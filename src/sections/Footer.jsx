@@ -17,7 +17,7 @@ function Footer(){
                         <li><Link className="list-inline-item" to="nasza-lok" smooth={true} duration={800}>Kontakt</Link></li>
                     </ul>
                 </div>
-                <p className="copyright">Elektromechanika Szarlej & Bochenek © 2023</p>
+                <p className="copyright">Szarlej & Bochenek Elektromechanika Motoryzacyjna S.C. © 2023</p>
             </footer>
         </div>
     )
