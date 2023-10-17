@@ -8,6 +8,8 @@ import NaszaOferta from './sections/NaszaOferta';
 import OpinieKlientow from './sections/OpinieKlientow';
 import UmowWizyte from './sections/UmowWizyte';
 import NaszaLokalizacja from './sections/NaszaLokalizacja';
+import Certyfikat from './sections/Certyfikat';
+import Footer from './sections/Footer';
 
 function App() { 
 
@@ -19,9 +21,11 @@ function App() {
       <DlaczegoMy/>
       <NaszaOferta/>
       <OpinieKlientow/>
+      <Certyfikat/>
       <UmowWizyte/>
       <NaszaLokalizacja/>
       <Contact/>
+      <Footer/>
     </div>
   );
 }
